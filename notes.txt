@@ -1,0 +1,11 @@
+
+cd school_management_api
+docker compose up 
+mvn spring-boot:run
+######################Database#####################################db_school
+docker exec -it mysql_container mysql
+show databases ;
+use db_school ;
+show tables ; 
+select  * from matiere ; 
+select  * from user ; 
